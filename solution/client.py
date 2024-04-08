@@ -1,6 +1,7 @@
 import requests
 import json
 
+
 def create_order(order_data):
     url = "http://localhost:8000/orders"
     headers = {'Content-type': 'application/json'}
@@ -16,21 +17,22 @@ def get_orders(params=None):
     print(response.json())
 
 
+
 def update_order(order_id, update_data):
-    url = f"http://localhost:8000/orders/{order_id}"
+    url = "http://localhost:8000/orders/{order_id}"
     headers = {'Content-type': 'application/json'}
     response = requests.put(url, data=json.dumps(update_data), headers=headers)
     print(response.json())
 
 
 def delete_order(order_id):
-    url = f"http://localhost:8000/orders/{order_id}"
+    url = "http://localhost:8000/orders/{order_id}"
     response = requests.delete(url)
     print(response.json())
 
 
 if __name__ == "__main__":
-    # Ejemplos de uso
+    # Ejemplos 
     create_order({
         "client": "Juan Perez",
         "status": "Pendiente",
@@ -56,3 +58,5 @@ if __name__ == "__main__":
     delete_order(1)
 
     get_orders()
+    
+#--------------------------------------------------------------

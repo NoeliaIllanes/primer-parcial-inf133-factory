@@ -2,6 +2,7 @@ from http.server import BaseHTTPRequestHandler, HTTPServer
 from urllib.parse import urlparse, parse_qs
 import json
 
+
 class OrderFactory:
     @staticmethod
     def create_order(order_type, **kwargs):
@@ -83,7 +84,7 @@ class OrderHandler(BaseHTTPRequestHandler):
             self.wfile.write(json.dumps({str(order_id): self.orders[order_id]}).encode('utf-8'))
         else:
             self._set_headers(404)
-            self.wfile.write("Order not found".encode('utf-8'))
+            self.wfile.write("Orden no encontrada".encode('utf-8'))
 
     def do_DELETE(self):
         order_id = int(self.path.split('/')[-1])
