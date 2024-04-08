@@ -10,9 +10,9 @@
 2. Si vas a trabajar en tu equipo local clona el nuevo repositorio resultado del **Fork** y abrelo con **VSCode** o el editor de tu preferencia para trabajar tu solución. También puedes trabajar tu solución en **GitHub Codespaces**.
 
 3. Completa tus datos personales en la siguiente tabla:
-    | Nombre   | Apellido   | CI   |
-    | -------- | ---------- | ---- |
-    | `nombre` | `apellido` | `ci` |
+    |      Nombre     |     Apellido     |    CI      |
+    | --------------- | ---------------- | ---------- |
+    | `Noelia Raquel` | `Illanes Quilla` | `13760788` |
 
 4. Realiza un commit de esta modificación y sube los cambios a tu repositorio remoto ejecutando los siguientes comandos desde la terminal de tu equipo local o desde **GitHub Codespaces**:
     ```bash
